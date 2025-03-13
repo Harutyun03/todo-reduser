@@ -33,17 +33,17 @@ export const reduser = (state, action) => {
                 todos : state.todos.filter(el => el.id !== action.payload)
             }
            
-            case "Done":
+        case "Done":
                 return {
                     ...state,
                     todos: state.todos.map((todo) => {
                         if (todo.id === action.payload) {
                             return { ...todo, isDone: !todo.isDone }
                         }
-                        return todo;
+                        
                     }
-                    )
-                }
+                )
+            }
 
     default : 
        return state

@@ -12,7 +12,7 @@ function Todo(){
         return dispatch({ type: "del", payload: id })
       }
 
-    const changeDone = (id) => {
+    const change = (id) => {
         dispatch({ type: "Done", payload: id })
     }
     return(
@@ -28,7 +28,7 @@ function Todo(){
                             <Todoitem
                               todo={todo}
                               del={() => removetodo(todo.id)}
-                              changeDone={() => changeDone(todo.id)}
+                              change={() => change(todo.id)}
                             />
                         </div>
                     )
