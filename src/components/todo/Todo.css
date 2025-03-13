@@ -1,0 +1,29 @@
+.todo{
+    border: 2px solid white;
+    width: 350px;
+    height: 40px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.item{
+    border: 2px solid black;
+
+}
+
+.parent{
+   
+    text-align: center;
+}
+
+
+
+input{
+    padding: 5px 15px;
+}
+
+.btn{
+    padding: 5px 15px;
+}
